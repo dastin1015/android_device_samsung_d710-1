@@ -37,9 +37,6 @@ TARGET_KERNEL_CONFIG := cyanogenmod_d710_defconfig
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/d710/bluetooth/include
 
-# Graphics
-EGL_ALWAYS_ASYNC := true
-
 # Notification LED
 BOARD_HAS_LED_NOTIF := true
 
