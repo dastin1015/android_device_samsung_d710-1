@@ -56,7 +56,7 @@ TARGET_SPECIFIC_HEADER_PATH := device/samsung/d710/include
 EXYNOS4210_ENHANCEMENTS := true
 
 # assert
-TARGET_OTA_ASSERT_DEVICE := epic4gtouch,SPH-D710,d710,smdk4210
+TARGET_OTA_ASSERT_DEVICE := epic4gtouch,SPH-D710,d710,smdk4210,SPH-D710VMUB,SPH-D710BST
 
 # Use the non-open-source parts, if they're present
 -include vendor/samsung/d710/BoardConfigVendor.mk
