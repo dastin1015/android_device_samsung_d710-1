@@ -73,7 +73,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libhwconverter \
     libs5pjpeg \
-    libfimg
+    libfimg \
+    sensors.exynos4
 
 # Screen density is actually considered a locale (since it is taken into account
 # the the build-time selection of resources). The product definitions including
