@@ -49,6 +49,7 @@ PRODUCT_COPY_FILES +=  \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/ev/overlay/wvga
 
-# USB
+# default.prop
 ADDITIONAL_DEFAULT_PROPERTIES += \
-    persist.sys.usb.config=mass_storage,adb
+    persist.sys.strictmode.disable=true
+
