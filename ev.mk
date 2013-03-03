@@ -15,26 +15,40 @@
 #
 
 ## Specify phone tech before including full_phone
-$(call inherit-product, vendor/cm/config/cdma.mk)
+$(call inherit-product, vendor/ev/config/cdma.mk)
 
-# Release name
-PRODUCT_RELEASE_NAME := SPH-D710
-
-# Bootanimation
-TARGET_SCREEN_HEIGHT := 800
-TARGET_SCREEN_WIDTH := 480
-
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common EV stuff.
+$(call inherit-product, vendor/ev/config/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/samsung/d710/full_d710.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := d710
-PRODUCT_NAME := cm_d710
+PRODUCT_NAME := ev_d710
 PRODUCT_BRAND := Samsung
 PRODUCT_MODEL := SPH-D710 
 
 #Set build fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SPH-D710 TARGET_DEVICE=SPH-D710 BUILD_FINGERPRINT=samsung/SPH-D710/SPH-D710:4.0.4/IMM76I/FH23:user/release-keys PRIVATE_BUILD_DESC="SPH-D710-user 4.0.4 IMM76I FH23 release-keys"
+
+# Set up the product codename, build version & MOTD.
+PRODUCT_CODENAME := Clarus
+PRODUCT_VERSION_DEVICE_SPECIFIC := p1
+
+PRODUCT_MOTD :="\n\n\n--------------------MESSAGE---------------------\nThank you for choosing Evervolv for your Epic 4G Touch\nPlease visit us at \#evervolv on irc.freenode.net\nFollow @preludedrew for the latest Evervolv updates\nGet the latest rom at evervolv.com\n------------------------------------------------\n"
+
+#PRODUCT_PACKAGES += \
+    Camera
+
+# Copy compatible prebuilt files
+PRODUCT_COPY_FILES +=  \
+    vendor/ev/prebuilt/wvga/media/bootanimation.zip:system/media/bootanimation.zip
+
+# wvga overlay
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/ev/overlay/wvga
+
+# USB
+ADDITIONAL_DEFAULT_PROPERTIES += \
+    persist.sys.usb.config=mass_storage,adb

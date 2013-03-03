@@ -35,5 +35,4 @@
     <bool name="enable_callback_option">false</bool>
     <bool name="SubjectSMS">true</bool>
     <bool name="International_SMS_Guard">true</bool>
-    <bool name="enableSprintVVM">true</bool>
 </mms_config>
