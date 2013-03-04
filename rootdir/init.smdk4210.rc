@@ -20,16 +20,6 @@ on init
     symlink /storage/sdcard1 /mnt/external_sd
     symlink /storage/usbdisk0 /usbdisk0
     symlink /storage/usbdisk0 /mnt/usbdisk0
-    symlink /storage/usbdisk1 /usbdisk1
-    symlink /storage/usbdisk1 /mnt/usbdisk1
-    symlink /storage/usbdisk2 /usbdisk2
-    symlink /storage/usbdisk2 /mnt/usbdisk2
-    symlink /storage/usbdisk3 /usbdisk3
-    symlink /storage/usbdisk3 /mnt/usbdisk3
-    symlink /storage/usbdisk4 /usbdisk4
-    symlink /storage/usbdisk4 /mnt/usbdisk4
-    symlink /storage/usbdisk5 /usbdisk5
-    symlink /storage/usbdisk5 /mnt/usbdisk5
 
 # Disable CFQ slice idle delay
     write /sys/block/mmcblk0/queue/iosched/slice_idle 0
