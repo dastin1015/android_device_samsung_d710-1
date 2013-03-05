@@ -22,11 +22,5 @@
         "target_path": "packages/apps/SamsungServiceMode",
         "branch": "jellybean",
         "dep_type": "app"
-    },
-    {
-        "repository": "android_vendor_samsung",
-        "target_path": "vendor/samsung",
-        "branch": "jellybean",
-        "dep_type": "vendor"
     }
 ]
