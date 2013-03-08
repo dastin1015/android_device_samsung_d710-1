@@ -59,8 +59,7 @@ PRODUCT_PACKAGES += \
     WiMAXHiddenMenu \
     AngryGPS \
     SprintMenu \
-    SystemUpdateUI \
-    sensors.exynos4
+    SystemUpdateUI
 
 # Screen density is actually considered a locale (since it is taken into account
 # the the build-time selection of resources). The product definitions including
