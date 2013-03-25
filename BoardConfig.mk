@@ -41,6 +41,7 @@ BOARD_MOBILEDATA_INTERFACE_NAME := "ppp0"
 # Recovery
 BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/samsung/d710/recovery/recovery_keys.c
 BOARD_UMS_LUNFILE := "/sys/devices/platform/s3c-usbgadget/gadget/lun%d/file"
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_10x18.h\"
 
 TARGET_SPECIFIC_HEADER_PATH := device/samsung/d710/include
 
