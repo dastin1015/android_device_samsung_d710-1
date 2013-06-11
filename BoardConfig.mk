@@ -26,7 +26,7 @@ TARGET_BOARD_INFO_FILE := device/samsung/d710/board-info.txt
 TARGET_RECOVERY_INITRC := device/samsung/d710/recovery/recovery.rc
 
 # Kernel Config
-TARGET_KERNEL_SOURCE := kernel/samsung/smdk4210
+TARGET_KERNEL_SOURCE := kernel/samsung/smdk4412
 TARGET_KERNEL_CONFIG := evervolv_d710_defconfig
 
 # Bluetooth
