@@ -55,14 +55,17 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/sirfgps.conf:system/etc/sirfgps.conf \
     $(LOCAL_PATH)/configs/apns-conf.xml:system/etc/apns-conf.xml
 
+# Packages
+PRODUCT_PACKAGES := \
+    DeviceSettings
+
 # WIMAX
 PRODUCT_PACKAGES += \
     WiMAXSettings \
     WiMAXHiddenMenu \
     AngryGPS \
     SprintMenu \
-    SystemUpdateUI \
-    GalaxyS2Settings
+    SystemUpdateUI
 
 # Screen density is actually considered a locale (since it is taken into account
 # the the build-time selection of resources). The product definitions including
