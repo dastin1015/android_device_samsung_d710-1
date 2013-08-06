@@ -32,6 +32,19 @@ TARGET_KERNEL_CONFIG := evervolv_d710_defconfig
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/d710/bluetooth/include
 
+# Selinux
+BOARD_SEPOLICY_DIRS := \
+    device/samsung/d710/selinux
+
+BOARD_SEPOLICY_UNION := \
+    device.te \
+    domain.te \
+    file.te \
+    file_contexts \
+    init.te \
+    wimax.te \
+    wpa_supplicant.te
+
 # Notification LED
 BOARD_HAS_LED_NOTIF := true
 

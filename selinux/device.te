@@ -1,0 +1,4 @@
+type mali_device, dev_type, mlstrustedobject;
+type rfkill_device, dev_type;
+type bluetooth_device, dev_type;
+type wimax_device, dev_type;
