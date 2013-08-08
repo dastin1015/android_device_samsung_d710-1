@@ -33,7 +33,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/usr/keylayout/samsung-keypad.kl:system/usr/keylayout/samsung-keypad.kl \
     $(LOCAL_PATH)/usr/keylayout/sec_key.kl:system/usr/keylayout/sec_key.kl \
     $(LOCAL_PATH)/usr/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl \
-    $(LOCAL_PATH)/usr/keylayout/sii9234_rcp.kl:system/usr/keylayout/sii9234_rcp.kl \
+    $(LOCAL_PATH)/usr/keylayout/sii9234_rcp.kl:system/usr/keylayout/sii9234_rcp.kl
 
 #idc
 PRODUCT_COPY_FILES += \
@@ -61,11 +61,12 @@ PRODUCT_PACKAGES := \
 
 # WIMAX
 PRODUCT_PACKAGES += \
-    WiMAXSettings \
-    WiMAXHiddenMenu \
     AngryGPS \
     SprintMenu \
     SystemUpdateUI
+
+#WiMAXSettings \
+#WiMAXHiddenMenu \
 
 # Screen density is actually considered a locale (since it is taken into account
 # the the build-time selection of resources). The product definitions including
