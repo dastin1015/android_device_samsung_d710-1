@@ -351,6 +351,9 @@ on post-fs-data
 on boot
     mount debugfs /sys/kernel/debug /sys/kernel/debug
 
+# TelephonyManager.java requires this
+    chmod 0644 /proc/cmdline
+
 # Device Encryption by B2B Security Lab.
     setprop ro.crypto.keyfile.userdata /efs/metadata
 
